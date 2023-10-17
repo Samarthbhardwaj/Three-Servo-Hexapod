@@ -1,7 +1,7 @@
 # Three Servo Hexapod Project Summary
 Hello! 
-Im Samarth Bhardwaj currently pursuing btech in cse 
-im in 2nd year
+Im Samarth Bhardwaj currently pursuing btech 
+Computer Science  2nd year
 ## Project Outline
 The aim of this project was to learn new things related to arduino controlling servos by building a three servo hexapod robot. A hexapod is a six-legged robot that can walk on different terrains and perform various tasks. A three servo hexapod uses only three servos to control the movement of six legs, which makes it more cost-effective and energy-efficient than a six servo hexapod.
 
