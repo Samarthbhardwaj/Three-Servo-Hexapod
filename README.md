@@ -23,3 +23,5 @@ The scope of this project was limited by the following factors:
 
 ## Summary
 This project was about learning new things related to arduino controlling servos by building a three servo hexapod robot. The hexapod robot was designed and built from scratch using simple and affordable materials. The arduino board was programmed to control the servos and make the hexapod move in different directions. The hexapod robot was tested and evaluated on different surfaces and scenarios. The main challenge of this project was to figure out how to make the hexapod move left and right using only three servos. This required writing a lot of codes and calculating the angles and distances of each leg movement. The project was successful in achieving its objectives and demonstrating how a three servo hexapod robot can be built and programmed using arduino and servos.
+## App To Control Hexapod
+https://play.google.com/store/apps/details?id=braulio.calle.bluetoothRCcontroller
