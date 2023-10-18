@@ -5,7 +5,7 @@ Servo lift;
 Servo front;
 Servo rear;
 char currstatus; // this is the instruction which will be recived by user
-SoftwareSerial BT(0,1);
+SoftwareSerial BT(2,3);
 void setup() {
 Serial.begin(9600);
 BT.begin(9600);
@@ -38,10 +38,14 @@ else if (currstatus=='B'){
 back();
 }
 else if (currstatus=='L'){
+
 left();
+
 }
 else if (currstatus=='R'){
+  
 right();
+
 }
 else if (currstatus=='S'){
 stop();
@@ -52,7 +56,7 @@ void forward(){
   delay(100);
   front.write(60);
   rear.write(60);
-  delay(100);
+  delay(200);
   lift.write(90);
   delay(100);
   lift.write(60);
@@ -62,16 +66,10 @@ void forward(){
   delay(100);
   front.write(120);
   rear.write(120);
-  delay(100);
+  delay(200);
   lift.write(90);
   delay(100);
-  lift.write(120);
-  delay(100);
-  front.write(90);
-  rear.write(90);
-  delay(100);
-  lift.write(90);
-  delay(100);
+
   
 }
 void back(){
@@ -79,7 +77,7 @@ void back(){
   delay(100);
   front.write(120);
   rear.write(120);
-  delay(100);
+  delay(200);
   lift.write(90);
   delay(100);
   lift.write(60);
@@ -89,50 +87,34 @@ void back(){
   delay(100);
   front.write(60);
   rear.write(60);
-  delay(100);
+  delay(200);
   lift.write(90);
   delay(100);
-  lift.write(120);
-  delay(100);
-  front.write(90);
-  rear.write(90);
-  delay(100);
-  lift.write(90);
-  delay(100);
-}
-void left(){
-lift.write(120);
-delay(150);
-rear.write(60);
-delay(300);
-front.write(120);
-delay(600);
-lift.write(90);
-delay(150);
-lift.write(60);
-delay(150);
-rear.write(120);
-delay(300);
-front.write(60);
-delay(600);
-lift.write(90);
 
 }
+void left(){
+lift.write(105);
+delay(100);
+rear.write(60);
+delay(200);
+front.write(60);
+delay(200);
+rear.write(120);
+delay(200);
+front.write(120);
+delay(200);
+}
 void right(){
-lift.write (120);
-  delay(100);
-  front.write(20);
-  rear.write(140);
-  delay(100);
-  lift.write(90);
-  delay(100);
-  lift.write(60);
-  delay(100);
-  front.write(90);
-  rear.write(90);
-  delay(100);
-  lift.write(90);
-  delay(100);
+lift.write(75);
+delay(100);
+rear.write(130);
+delay(250);
+front.write(130);
+delay(250);
+rear.write(55);
+delay(250);
+front.write(55);
+delay(250);
 }
 
 void stop(){
