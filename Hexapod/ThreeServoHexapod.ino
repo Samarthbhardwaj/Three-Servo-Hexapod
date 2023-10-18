@@ -5,7 +5,7 @@ Servo lift;
 Servo front;
 Servo rear;
 char currstatus; // this is the instruction which will be recived by user
-SoftwareSerial BT(2,3);
+SoftwareSerial BT(0,1);
 void setup() {
 Serial.begin(9600);
 BT.begin(9600);
